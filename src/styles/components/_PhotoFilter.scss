@@ -1,0 +1,17 @@
+.photo-filter {
+    display: flex;
+    font-size: 20px;
+    color: $main-white;
+    width: 400px;
+
+    input {
+        margin-left: 5px;
+        padding: 4px;
+        border-radius: 5px;
+
+        &:focus {
+            outline: none;
+            border: 2px solid $id-text;
+        }
+    }
+}

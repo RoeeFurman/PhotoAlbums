@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(18, 38, 54);
+    background: linear-gradient(0deg, rgba(18, 38, 54, 1) 0%, rgba(89, 125, 160, 1) 93%);
+    position: fixed;
+    top: 0;
+    padding: 25px 120px;
+    background-color: $main-bg;
+    box-shadow: 5px 5px 22px 0px rgba(0, 0, 0, 0.76);
+    border-bottom: 3px solid $modal-border;
+    opacity: 0.9;
+    color: $main-white;
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        cursor: context-menu;
+
+        img {
+            height: 60px;
+            width: 95px;
+            object-fit: contain;
+        }
+    }
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .album-picker {
+        position: relative;
+
+        button {
+            background-color: rgb(255, 165, 181);
+            border-radius: 20px;
+            padding: 10px;
+            transition: all .3s;
+            height: 60px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            &:hover {
+                background-color: rgba(255, 79, 108);
+            }
+        }
+
+        ul {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translate(-50%);
+            height: 400px;
+            width: 150px;
+            overflow-y: auto;
+            background: linear-gradient(180deg, rgb(255, 194, 204) 31%, rgba(255, 79, 108, 1) 93%);
+            border: 1px solid black;
+            color: black;
+            font-weight: 500;
+            text-align: center;
+            font-size: 20px;
+            line-height: 35px;
+            box-shadow: 0px 0px 34px 8px rgba(0, 0, 0, 0.55);
+            cursor: pointer;
+
+
+            li {
+                border-bottom: 1px solid $main-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// SETUP
+@import "setup/variables";
+@import "setup/typography";
+@import "setup/functions";
+@import "setup/mixins";
+
+// BASICS
+@import "basics/base";
+
+
+// PAGES
+@import "pages/homepage";
+
+// COMPONENTS
+@import "components/albums-list";
+@import "components/album-preview";
+@import "components/photo-preview";
+@import "components/header";
+@import "components/PhotoFilter";

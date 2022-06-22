@@ -1,0 +1,53 @@
+.album-preview {
+    background-color: $main-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    border: 3px solid $main-card;
+    box-shadow: 5px 5px 22px 0px rgba(0, 0, 0, 0.76);
+    margin: auto;
+    cursor: pointer;
+
+    >* {
+        padding: 10px;
+    }
+
+    .img-div {
+        width: 100%;
+        background: $img-bg;
+        text-align: center;
+
+        img {
+            height: 80px;
+            width: 80px;
+            border-radius: 25px;
+        }
+
+    }
+
+    h2 {
+        color: $main-white;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    h3 {
+        color: $id-text;
+    }
+
+    .url-display {
+        padding: 5px;
+        width: 100%;
+        margin: 0 2px;
+        background-color: $url-bg;
+        text-align: left;
+
+        h4 {
+            color: $id-text;
+        }
+    }
+}

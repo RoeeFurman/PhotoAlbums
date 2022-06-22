@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/PhotoAlbums/static/css/main.32e22bd7.css",
+    "main.js": "/PhotoAlbums/static/js/main.78ba5944.js",
+    "static/js/787.19bfb53f.chunk.js": "/PhotoAlbums/static/js/787.19bfb53f.chunk.js",
+    "static/media/GothamLight.ttf": "/PhotoAlbums/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
+    "static/media/GothamMedium.ttf": "/PhotoAlbums/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
+    "static/media/GothamBold.ttf": "/PhotoAlbums/static/media/GothamBold.108854bb27dee2dce854.ttf",
+    "index.html": "/PhotoAlbums/index.html",
+    "main.32e22bd7.css.map": "/PhotoAlbums/static/css/main.32e22bd7.css.map",
+    "main.78ba5944.js.map": "/PhotoAlbums/static/js/main.78ba5944.js.map",
+    "787.19bfb53f.chunk.js.map": "/PhotoAlbums/static/js/787.19bfb53f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32e22bd7.css",
+    "static/js/main.78ba5944.js"
+  ]
+}

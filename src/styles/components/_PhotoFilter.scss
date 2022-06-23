@@ -8,10 +8,18 @@
         margin-left: 5px;
         padding: 4px;
         border-radius: 5px;
+        background-color: $main-bg;
+        outline: none;
+        border: 2px solid $id-text;
+        color: $modal-border;
+
+        &::placeholder {
+            color: $id-text;
+        }
 
         &:focus {
             outline: none;
-            border: 2px solid $id-text;
+            border: 2px solid $modal-border;
         }
     }
 }

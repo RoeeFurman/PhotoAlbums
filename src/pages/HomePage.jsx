@@ -14,24 +14,15 @@ export const HomePage = () => {
 
   useEffect(() => {
     loadAlbums(filterBy);
+    console.log(albumsNum);
   }, [filterBy]);
 
   const loadAlbums = async (filterBy) => {
     const albums = await albumsService.query(filterBy);
     setAlbums(albums);
     setAlbumsNum(albumsService.getAlbumsNumber(albums));
-    // setAlbumsNum(getAlbumsNumber(albums));
     setalbumToDisplay(albums);
   };
-
-  //   const getAlbumsNumber = (albums) => {
-  //     let res = [];
-  //     albums.forEach((album) => {
-  //       if (!res.includes(album.albumId)) res.push(album.albumId);
-  //     });
-  //     console.log(res);
-  //     return res;
-  //   };
 
   const changeCurrAlbum = (num) => {
     setCurrAlbum(num);
@@ -49,7 +40,7 @@ export const HomePage = () => {
         <div className="album-title">Album {currAlbum}</div>
         <PhotosFilter setFilter={setFilter} />
       </div>
-      {!albumsNum?.length && (
+      {!albums.length && (
         <h1 className="display-title">No photos to display, try again</h1>
       )}
       {albums && (

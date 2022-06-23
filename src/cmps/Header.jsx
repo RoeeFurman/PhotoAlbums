@@ -11,7 +11,7 @@ export const Header = ({ albumsNum, changeCurrAlbum }) => {
   return (
     <section className="header">
       <div className="logo">
-        <h1 className="logo-title">Photo Albums</h1>
+        <h1 className="logo-title">Photo Albums </h1>
         <img
           alt="Album"
           src="https://bayphoto.com/assets/img/products/thumbs/pacific-albums.png"

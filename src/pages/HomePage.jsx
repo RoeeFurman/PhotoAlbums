@@ -14,7 +14,6 @@ export const HomePage = () => {
 
   useEffect(() => {
     loadAlbums(filterBy);
-    console.log(albumsNum);
   }, [filterBy]);
 
   const loadAlbums = async (filterBy) => {
@@ -40,7 +39,7 @@ export const HomePage = () => {
         <div className="album-title">Album {currAlbum}</div>
         <PhotosFilter setFilter={setFilter} />
       </div>
-      {!albums.length && (
+      {!albums?.length && (
         <h1 className="display-title">No photos to display, try again</h1>
       )}
       {albums && (

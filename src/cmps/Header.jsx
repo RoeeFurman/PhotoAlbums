@@ -24,14 +24,14 @@ export const Header = ({ albumsNum, changeCurrAlbum }) => {
           </button>
           {albumPickerOpen && (
             <ul className="drop-down">
-              {albumsNum.map((num) => (
+              {albumsNum.map((albumId) => (
                 <li
-                  key={num}
+                  key={albumId}
                   onClick={() => {
-                    changeAlbum(num);
+                    changeAlbum(albumId);
                   }}
                 >
-                  Album {num}
+                  Album {albumId}
                 </li>
               ))}
             </ul>

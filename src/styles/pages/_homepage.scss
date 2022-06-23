@@ -6,6 +6,11 @@
     min-height: calc(100vh - 113px);
     margin-top: 113px;
 
+    .display-title {
+        color: $main-white;
+        padding: 30px;
+    }
+
     .album-title {
         text-align: left;
         width: 100%;

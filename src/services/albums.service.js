@@ -7,9 +7,12 @@ export const albumsService = {
     getAlbumsNumber
 }
 
+let _gAlbums = []
+
 async function query(value) {
-    const valueToLower = value.toLocaleLowerCase()
+    const valueToLower = value?.toLocaleLowerCase()
     const res = await axios.get(`https://jsonplaceholder.typicode.com/photos`)
+    _gAlbums = res.data
     if (value === '' || !value) return res.data
     return res.data.filter((album) =>
         album.title.toLocaleLowerCase().includes(valueToLower)
@@ -17,13 +20,12 @@ async function query(value) {
 }
 
 async function getPhotoById(photoId) {
-    const res = await query()
-    return res.filter(photo => photo.id === +photoId)
+    return _gAlbums.filter(photo => photo.id === +photoId)
 }
 
-function getAlbumsNumber(albums) {
+function getAlbumsNumber() {
     let res = []
-    albums.forEach(album => {
+    _gAlbums.forEach(album => {
         if (!res.includes(album.albumId)) res.push(album.albumId)
     })
     return res

@@ -9,7 +9,6 @@ export const PhotoPreview = ({ match }) => {
   const [currPhoto, setCurrPhoto] = useState(null);
 
   useEffect(() => {
-    console.log(match.params.photoId, "id");
     getPhotoDetails();
   }, []);
 

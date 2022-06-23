@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/PhotoAlbums/static/css/main.d6eea3fe.css",
+    "main.css": "/PhotoAlbums/static/css/main.67f9898e.css",
     "main.js": "/PhotoAlbums/static/js/main.dca11664.js",
     "static/js/787.19bfb53f.chunk.js": "/PhotoAlbums/static/js/787.19bfb53f.chunk.js",
     "static/media/GothamLight.ttf": "/PhotoAlbums/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
     "static/media/GothamMedium.ttf": "/PhotoAlbums/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
     "static/media/GothamBold.ttf": "/PhotoAlbums/static/media/GothamBold.108854bb27dee2dce854.ttf",
     "index.html": "/PhotoAlbums/index.html",
-    "main.d6eea3fe.css.map": "/PhotoAlbums/static/css/main.d6eea3fe.css.map",
+    "main.67f9898e.css.map": "/PhotoAlbums/static/css/main.67f9898e.css.map",
     "main.dca11664.js.map": "/PhotoAlbums/static/js/main.dca11664.js.map",
     "787.19bfb53f.chunk.js.map": "/PhotoAlbums/static/js/787.19bfb53f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6eea3fe.css",
+    "static/css/main.67f9898e.css",
     "static/js/main.dca11664.js"
   ]
 }

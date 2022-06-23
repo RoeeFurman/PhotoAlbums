@@ -35,7 +35,7 @@ export const PhotoPreview = ({ match }) => {
             <h1>
               Photo Title: <span>{currPhoto.title}</span>
             </h1>
-            <img src={currPhoto.url} alt={currPhoto.title} />
+            <img src={currPhoto.url} alt={currPhoto.title} loading="lazy" />
             <h1>
               Album Id: <span>{currPhoto.albumId}</span>
             </h1>

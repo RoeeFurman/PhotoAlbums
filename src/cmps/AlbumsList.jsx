@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { AlbumPreview } from "../cmps/AlbumPreview";
 import { useHistory } from "react-router-dom";
 import { Route } from "react-router-dom";
